@@ -24,7 +24,7 @@ class LoadStreamLitUI :
         if self.user_controls["selected_llm"] == 'Groq' :
             model_options = self.config.get_groq_model_options()
             self.user_controls['selected_groq_model'] = st.selectbox("Select Model", model_options)
-            self.user_controls["GROQ_API_KEY"]=st.text_input("API Key",value="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")
+            self.user_controls["GROQ_API_KEY"]=st.text_input("API Key",value="")
             
         ## Use case selection
         self.user_controls["selected_usecase"] = st.selectbox("Select Usecases",usecase_options)
